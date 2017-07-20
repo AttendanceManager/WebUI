@@ -38,32 +38,64 @@
         </div>
     </div>
 
-    <div class='modal-dialog'>
-        <div class='modal-content col-lg-12'>
-            <div class='modal-header'>
-                <h1 class='text-center'>
-                    LOGIN
-                </h1>
-            </div>
+    <div class='container-fluid'>
+        <div class='modal-dialog'>
+            <div class='modal-content col-lg-12'>
+                <div class='modal-header'>
+                    <h1 class='text-center'>
+                        LOGIN
+                    </h1>
+                </div>
 
-            <div class='modal-body'>
-                <form class='col-lg-12 center-block' action='loginV.php' method='POST'>
-                    <div class='form-group'>
-                        <input type='text' class='form-control input-lg' placeholder='Email ID' name='email_id' required>
-                    </div>
-                    <div class='form-group'>
-                        <input type='password' class='form-control input-lg' placeholder='Password' name='password' required>
-                    </div>
-                    <div class='form-group'>
-                        <input type='submit' class='btn btn-block btn-lg btn-primary' name='lgbtn' value='Log In'>
-                        <span class='pull-left' style='margin-bottom: 10px;'><a href='signUPForm.php'><h5>SignUP</h5></a></span>
-                        <span class='pull-right'><a href='index.php'><h5>Just Browse</h5></a></span>
-                    </div>
-                </form>
+                <div class='modal-body'>
+                    <form class='col-lg-12 center-block' action='loginV.php' method='POST'>
+                        <div class='form-group'>
+                            <input type='text' class='form-control input-lg' placeholder='Email ID' name='email_id' required>
+                        </div>
+                        <div class='form-group'>
+                            <input type='password' class='form-control input-lg' placeholder='Password' name='password' required>
+                        </div>
+                        <div class='form-group'>
+                            <input type='submit' class='btn btn-block btn-lg btn-primary' name='lgbtn' value='Log In'>
+                            <span class='pull-left' style='margin-bottom: 10px;'><a href='signUPForm.php'><h5>SignUP</h5></a></span>
+                            <span class='pull-right'><a data-toggle='tab' href='#forgotPassword'><h5>Forgot Password</h5></a></span>
+                        </div>
+                        
+                    </form>
+                </div>
             </div>
         </div>
     </div>
+    <br>
+    <div class='container-fluid'>
+        <div class='tab-content'>
+            <div id='forgotPassword' class='tab-pane fade' style='text-align: center;'>
+                <div class='modal-dialog'>
+                    <div class='modal-content col-lg-12'>
+                        <div class='modal-header'>
+                            <h1 class='text-center'>
+                                Forgot Password
+                            </h1>
+                        </div>
 
+                        <div class='modal-body'>
+                            <form class='col-lg-12 center-block' action='FORGOT_PASSWORD_REDIRECT_HERE' method='POST'>
+                                <div class='form-group'>
+                                    <input type='text' class='form-control input-lg' placeholder='Email ID' name='email_id' required>
+                                </div>
+                                <div class='form-group'>
+                                    <input type='submit' class='btn btn-block btn-lg btn-primary' name='lgbtn' value='Send Me A Confirmation E-Mail'>
+                                </div>
+                                
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    
+    </div>
+    
 
     <script src='js/jquery-1.10.2.min.js'></script>
     <script src='js/bootstrap.min.js'></script>
