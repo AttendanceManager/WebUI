@@ -10,7 +10,7 @@
     <link href='css/bootstrap-material-design.css' rel='stylesheet'>
     <link href='css/ripples.min.css' rel='stylesheet'>
     <link href='css/snackbar.css' rel='stylesheet'>
-
+    <link href='css/hoverImplement.css' rel='stylesheet'>
     <title>Login</title>
 
 </head>
@@ -18,7 +18,7 @@
 <body>
 
     <div class='bs-component'>
-        <div class='navbar navbar-danger'>
+        <div class='navbar' style='background-color: black;'>
             <div class='container-fluid'>
                 <div class='navbar-header'>
                     <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-responsive-collapse'>
@@ -30,8 +30,8 @@
                 </div>
                 <div class='navbar-collapse collapse navbar-responsive-collapse'>
                     <ul class='nav navbar-nav navbar-right'>
-                        <li><a href='signUp.html'>SignUP <span class='glyphicon glyphicon-ok'></span><div class='ripple-container'></div></a></li>
-                        <li><a href='#'>LogIn <span class='glyphicon glyphicon-log-in'></span><div class='ripple-container'></div></a></li>
+                        <li id='hoverElement'><a href='signUp.html'>SignUP <span class='glyphicon glyphicon-ok'></span><div class='ripple-container'></div></a></li>
+                        <li id='hoverElement'><a href='#'>LogIn <span class='glyphicon glyphicon-log-in'></span><div class='ripple-container'></div></a></li>
                     </ul>
                 </div>
             </div>
@@ -106,9 +106,9 @@
 
 </body>
 <hr>
-<footer class=' bscomponent navbar navbar-fixed-bottom navbar-danger'>
+<footer class=' bscomponent navbar navbar-fixed-bottom' style='background-color: black;'>
 
-    <div class='container-fluid' style='padding:20px;'>
+    <div class='container-fluid' style='padding: 7px;'>
         <div class='row'>
             <div class='col-md-4' style='text-align:center;'>
                 <a href='#' style='color:#FFF;'>About Us</a>
